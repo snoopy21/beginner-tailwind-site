@@ -6,32 +6,74 @@
     <title>Beginner Tailwind</title>
 </head>
 <body>
-    <!-- ============================================================== -->
-    <!-- header/navigation ============================================= -->
-    <!-- ============================================================== -->
-    <div class="text-gray-600">
-        <div class="container mx-auto flex justify-between px-6 lg:px-0 py-6">
-            
-            <!-- left header section -->
-            <div class="flex items-center space-x-4">
-                <a href="#" class="font-bold text-2xl text-teal-800">Beginner Tailwind</a>
-                <a href="#about" class="hidden lg:inline-block hover:text-gray-900">About</a>
-                <a href="#" class="hidden lg:inline-block hover:text-gray-900">What you'll learn</a>
-                <a href="#pricing" class="hidden lg:inline-block hover:text-gray-900">Pricing</a>
-                <a href="#faq" class="hidden lg:inline-block hover:text-gray-900">FAQ</a>
+    <div class="bg-gradient-to-br from-white to-gray-300">
+
+        <!-- left circle decoration --> 
+        <div class="absolute top-0 left-0 transform translate-x-4 translate-y-4">
+            <div class="absolute bg-gradient-to-br from-teal-100 to-teal-200 w-64 h-64 rounded-full opacity-50"></div>
+            <div class="absolute ml-10 mt-10 bg-gradient-to-br from-purple-100 to-purple-200 w-64 h-64 rounded-full opacity-50"></div>
+            <div class="absolute ml-24 bg-gradient-to-br from-red-100 to-red-200 w-64 h-64 rounded-full opacity-50"></div>
+        </div>
+
+        <!-- right circle decoration --> 
+        <div class="hidden lg:block absolute top-0 right-0 mr-48 transform -translate-x-64 translate-y-64">
+            <div class="absolute bg-gradient-to-br from-teal-100 to-teal-200 w-64 h-64 rounded-full opacity-50"></div>
+            <div class="absolute ml-10 mt-10 bg-gradient-to-br from-purple-100 to-purple-200 w-64 h-64 rounded-full opacity-50"></div>
+            <div class="absolute ml-24 bg-gradient-to-br from-red-100 to-red-200 w-64 h-64 rounded-full opacity-50"></div>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- header/navigation ============================================= -->
+        <!-- ============================================================== -->
+        <div class="relative text-gray-600">
+            <div class="container mx-auto flex justify-between px-6 lg:px-0 py-6">
+                
+                <!-- left header section -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="font-bold text-2xl text-teal-800">Beginner Tailwind</a>
+                    <a href="#about" class="hidden lg:inline-block hover:text-gray-900">About</a>
+                    <a href="#" class="hidden lg:inline-block hover:text-gray-900">What you'll learn</a>
+                    <a href="#pricing" class="hidden lg:inline-block hover:text-gray-900">Pricing</a>
+                    <a href="#faq" class="hidden lg:inline-block hover:text-gray-900">FAQ</a>
+                </div>
+                
+                <!-- right header section -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-gray-900">Login</a>
+                    <a href="#" class="hidden lg:inline-block p-3 bg-purple-300 hover:bg-purple-600  text-purple-700 hover:text-purple-300 rounded shadow transition duration-300">Get the Course</a>
+                </div>
             </div>
-            
-            <!-- right header section -->
-            <div class="flex items-center space-x-4">
-                <a href="#" class="hover:text-gray-900">Login</a>
-                <a href="#" class="hidden lg:inline-block p-3 bg-purple-300 hover:bg-purple-600  text-purple-700 hover:text-purple-300 rounded shadow transition duration-300">Get the Course</a>
+        </div>
+        <!-- ============================================================== -->
+        <!-- hero ============================================= -->
+        <!-- ============================================================== -->
+
+        <div class="relative">
+            <div class="container max-auto px-6 lg:px-0 py-24 text-center">
+                <!-- heading -->
+                <h1 class="mb-4 text-5xl lg:text-6xl font-extrabold">
+                    <span class="text-transparent bg-gradient-to-r from-teal-400 to-teal-500 bg-clip-text">Beginner</span> 
+                    <span class="text-transparent bg-gradient-to-r from-teal-500 via-purple-600 to-purple-600 bg-clip-text">Tailwind</span></h1>
+
+                <!-- paragraph -->
+                <p class="mb-8 text-lg lg:text-2xl text-gray-700">Make good looking design quickly. All without a single line of custom CSS</p>
+
+                <!-- big button / call to action -->
+                <a href="#" class="mb-16 lg:mb-32 inline-block py-3 px-12 rounded bg-gradient-to-br from-purple-500 hover:from-purple-500 to-purple-700 hover:to-purple-500 text-purple-100 tracking-wider hover:tracking-wide font-bold shadow-lg hover:shadow-2xl transition duration-500">Get the course</a>
+
+                <!-- teaser image -->
+                <div class="relative">
+                    <img src="https://i.imgur.com/wysbBMS.png" alt="Teaser image" class="rounded-lg border-4 border-purple-400"/>
+
+                    <!-- teaser image info box -->
+                    <div class="lg:absolute top-0 right-0 lg:transform translate-x-4 -translate-y-4 bg-yellow-100 text-left py-4 px-8 mt-8 lg:mt-0 rounded shadow-lg text-yellow-800 border-t-4 border-yellow-500">
+                        <p><strong class="font-bold">We'll create BeginnerTailwind.com</strong> <span class="opacity-75">(it's the site your're now)</span></p>
+                        <p>We'll do it all without a single line of cusom CSS</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- ============================================================== -->
-    <!-- hero ============================================= -->
-    <!-- ============================================================== -->
-
     <!-- ============================================================== -->
     <!-- overview ============================================= -->
     <!-- ============================================================== -->
